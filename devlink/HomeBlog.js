@@ -10,14 +10,6 @@ const _interactionsData = JSON.parse(
 
 export function HomeBlog({
   as: _Component = _Builtin.Section,
-  imageBlog = "",
-  headingBlog = "Heading",
-  catBlog = "Text Link",
-
-  blogLink = {
-    href: "#",
-  },
-
   header = "BLOG- CODEHERWAY",
   blogBtnLink = {},
   buttonText = (

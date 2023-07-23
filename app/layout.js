@@ -1,4 +1,4 @@
-import { DevLinkProvider, Navbar, NewNav } from "@/devlink";
+import { DevLinkProvider, NewNav } from "@/devlink";
 import "@/devlink/global.css";
 import styles from "./globals.css";
 import "@/utils/font.css";
@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
               home={{ href: "/" }}
               blog={{ href: "/blog" }}
               portfolio={{ href: "/portfolio" }}
-              about={{ href: "/about" }}
+              contact={{ href: "/contact" }}
             />
             {children}
           </div>

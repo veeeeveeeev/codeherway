@@ -10,13 +10,6 @@ const _interactionsData = JSON.parse(
 
 export function BlogBody({
   as: _Component = _Builtin.Section,
-  imageBlog = "https://uploads-ssl.webflow.com/64a66f68b6db9c22b28bd749/64ba08227e77798c55fad60e_64b34219d4e691cd90a3d9a2_bongs%20thumbnails%20(19).png",
-  headingBlog = "Heading",
-  catBlog = "Heading",
-
-  headingLink = {
-    href: "#",
-  },
 
   blogComponent,
 }) {

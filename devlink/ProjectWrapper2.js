@@ -17,7 +17,6 @@ export function ProjectWrapper2({
       {"‍"}
     </>
   ),
-  clientLogoImage2 = "https://uploads-ssl.webflow.com/64a66f68b6db9c22b28bd749/64b2ae3a605b77f62557d59b_Copy%20of%20mai%20mo%20don.jpg",
   projectSmallSlot,
 }) {
   _interactions.useInteractions(_interactionsData, _styles);

@@ -15,8 +15,6 @@ export * from "./Hero";
 export * from "./HomeBlog";
 export * from "./HomeBlogComponent";
 export * from "./LargeProject";
-export * from "./Nav";
-export * from "./Navbar";
 export * from "./NewNav";
 export * from "./PortfolioBody";
 export * from "./PortfolioTop";

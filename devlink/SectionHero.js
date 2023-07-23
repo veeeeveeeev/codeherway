@@ -18,7 +18,7 @@ export function SectionHero({ as: _Component = _Builtin.Section }) {
       data-w-id="364e7ff9-1b93-e002-6d26-4f4301fdae8e"
       tag="div"
     >
-      <Hero />
+      <Hero contactLink={{ href: "/contact" }} />
     </_Component>
   );
 }

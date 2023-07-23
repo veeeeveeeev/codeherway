@@ -10,7 +10,7 @@ export function SectionCallToAction({ as: _Component = _Builtin.Section }) {
       className={_utils.cx(_styles, "section-call-to-action")}
       tag="div"
     >
-      <CallToAction />
+      <CallToAction ctaLink={{ href: "/portfolio" }} />
     </_Component>
   );
 }
