@@ -3,7 +3,6 @@ import { Contact } from "@/devlink";
 import React from "react";
 
 const page = () => {
-  const router = useRouter();
   return (
     <Contact
       formProps={{
