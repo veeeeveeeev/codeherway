@@ -27,6 +27,7 @@ const Home = async () => {
         header="BLOG - CODE HER WAY"
         homeBlogComponent={feature.map((post) => (
           <HomeBlogComponent
+            key={post._id}
             blogLink={{ href: `/blog/${post._id}` }}
             imageBlog={post.image}
             headingBlog={post.title}

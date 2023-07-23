@@ -26,6 +26,7 @@ const Blog = async () => {
       <BlogBody
         blogComponent={data.map((post) => (
           <BlogComponent
+            key={post._id}
             imageBlog={post.image}
             headingBlog={post.title}
             catBlog={post.cat}

@@ -37,7 +37,7 @@ const Project = async () => {
       <ProjectWrapper
         subheadingText="Editorial"
         projectLargeSlot={projects[0].images.map((image) => (
-          <LargeProject clientLogoImage={image} projectTitle=" " />
+          <LargeProject key={image} clientLogoImage={image} projectTitle=" " />
         ))}
       />
       {/* <ProjectWrapper
@@ -57,7 +57,7 @@ const Project = async () => {
       <ProjectWrapper2
         subheadingText2="Promo"
         projectSmallSlot={projects[1].images.map((image) => (
-          <ProjectSmall clientLogoImage2={image} projectTitle=" " />
+          <ProjectSmall key={image} clientLogoImage2={image} projectTitle=" " />
         ))}
       />
     </>
