@@ -1,0 +1,218 @@
+.section {
+  display: flex;
+  padding-right: 12%;
+  padding-left: 12%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@media screen and (max-width: 479px) {
+  .section {
+    padding-right: 8%;
+    padding-left: 8%;
+  }
+}
+
+.section.page {
+  padding-bottom: 160px;
+}
+
+@media screen and (max-width: 767px) {
+  .section.page {
+    padding-bottom: 130px;
+  }
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  grid-row-gap: 120px;
+}
+
+@media screen and (max-width: 767px) {
+  .about {
+    grid-row-gap: 80px;
+  }
+}
+
+.grid-about {
+  align-items: start;
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+  grid-template-columns: minmax(auto, 160px) minmax(auto, 780px);
+  grid-template-rows: auto;
+}
+
+@media screen and (max-width: 991px) {
+  .grid-about {
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-template-columns: minmax(auto, 96px) minmax(auto, 780px);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .grid-about {
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    grid-template-columns: minmax(auto, 780px);
+  }
+}
+
+.subheading {
+  margin-bottom: 0px;
+}
+
+.grid-client {
+  grid-column-gap: 10px;
+  grid-row-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+}
+
+@media screen and (max-width: 991px) {
+  .grid-client {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .grid-client {
+    grid-template-columns: 1fr;
+  }
+}
+
+.grid-client.large {
+  grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (max-width: 991px) {
+  .grid-client.large {
+    grid-template-columns: 1fr;
+  }
+}
+
+.client-logo {
+  height: 100%;
+  transition: all 400ms cubic-bezier(.23, 1, .32, 1);
+}
+
+.client-logo:hover {
+  opacity: 0.2;
+}
+
+@media screen and (max-width: 991px) {
+  .client-logo {
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .client-logo {
+    height: 100%;
+  }
+}
+
+.client-logo.promo {
+  position: relative;
+  height: 100%;
+}
+
+@media screen and (max-width: 991px) {
+  .client-logo.promo {
+    height: 100%;
+  }
+}
+
+.client-logo.large {
+  height: 100%;
+  transition-duration: 400ms;
+  transition-timing-function: cubic-bezier(.23, 1, .32, 1);
+  object-fit: fill;
+}
+
+.client-logo.large:hover {
+  position: static;
+
+  display: block;
+  overflow: visible;
+  height: 100%;
+  max-width: 100%;
+
+  opacity: 0.2;
+}
+
+@media screen and (max-width: 991px) {
+  .client-logo.large:hover {
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .client-logo.large:hover {
+    height: 100%;
+  }
+}
+
+#w-node-c05217af-1cdf-27fa-035d-4f066fb7d9b3-6fb7d99f {
+  grid-column-start: span 1;
+  grid-column-end: span 1;
+  grid-row-start: span 1;
+  grid-row-end: span 1;
+}
+#w-node-c05217af-1cdf-27fa-035d-4f066fb7d9b5-6fb7d99f {
+  grid-column-start: span 1;
+  grid-column-end: span 1;
+  grid-row-start: span 1;
+  grid-row-end: span 1;
+}
+#w-node-c05217af-1cdf-27fa-035d-4f066fb7d9b7-6fb7d99f {
+  grid-column-start: span 1;
+  grid-column-end: span 1;
+  grid-row-start: span 1;
+  grid-row-end: span 1;
+}
+#w-node-c05217af-1cdf-27fa-035d-4f066fb7d9b9-6fb7d99f {
+  grid-column-start: span 1;
+  grid-column-end: span 1;
+  grid-row-start: span 1;
+  grid-row-end: span 1;
+}
+#w-node-c05217af-1cdf-27fa-035d-4f066fb7d9bb-6fb7d99f {
+  grid-column-start: span 1;
+  grid-column-end: span 1;
+  grid-row-start: span 1;
+  grid-row-end: span 1;
+}
+#w-node-c05217af-1cdf-27fa-035d-4f066fb7d9be-6fb7d99f {
+  grid-column-start: span 1;
+  grid-column-end: span 1;
+  grid-row-start: span 1;
+  grid-row-end: span 1;
+}
+#w-node-c05217af-1cdf-27fa-035d-4f066fb7d9c0-6fb7d99f {
+  grid-column-start: span 1;
+  grid-column-end: span 1;
+  grid-row-start: span 1;
+  grid-row-end: span 1;
+}
+#w-node-c05217af-1cdf-27fa-035d-4f066fb7d9c2-6fb7d99f {
+  grid-column-start: span 1;
+  grid-column-end: span 1;
+  grid-row-start: span 1;
+  grid-row-end: span 1;
+}
+#w-node-c05217af-1cdf-27fa-035d-4f066fb7d9c4-6fb7d99f {
+  grid-column-start: span 1;
+  grid-column-end: span 1;
+  grid-row-start: span 1;
+  grid-row-end: span 1;
+}
+#w-node-c05217af-1cdf-27fa-035d-4f066fb7d9c6-6fb7d99f {
+  grid-column-start: span 1;
+  grid-column-end: span 1;
+  grid-row-start: span 1;
+  grid-row-end: span 1;
+}

@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "Taviraj";
+  src: url(../font/Taviraj-ExtraLightItalic.ttf);
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Taviraj";
+  src: url(../font/Taviraj-ExtraLight.ttf);
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Taviraj";
+  src: url(../font/Taviraj-LightItalic.ttf);
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}

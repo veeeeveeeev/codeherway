@@ -1,0 +1,27 @@
+.section-call-to-action {
+  display: flex;
+  min-height: 100vh;
+  margin-bottom: -74px;
+  padding: 160px 12%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 991px) {
+  .section-call-to-action {
+    min-height: 80vh;
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .section-call-to-action {
+    padding-right: 8%;
+    padding-left: 8%;
+  }
+}
+
+.section-call-to-action._75vh {
+  min-height: 75vh;
+}

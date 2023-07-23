@@ -1,0 +1,76 @@
+.utility-page-wrap {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  margin-bottom: -74px;
+  padding: 160px 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .utility-page-wrap {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .utility-page-wrap {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+.utility-page-content {
+  display: flex;
+  width: 100%;
+  max-width: 300px;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+}
+
+.button {
+  padding: 20px 40px;
+
+  border-radius: 50px;
+
+  background-color: transparent;
+
+  box-shadow: inset 0 0 0 2px var(--light-f4c73625);
+
+  transition: color 300ms cubic-bezier(.25, .46, .45, .94),box-shadow 300ms cubic-bezier(.25, .46, .45, .94);
+
+  color: var(--light-f4c73625);
+  font-size: 16px;
+  line-height: 120%;
+  font-weight: 500;
+  letter-spacing: 1.85px;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  box-shadow: inset 0 0 0 40px var(--light-f4c73625);
+  color: var(--dark-bba5272b);
+}
+
+@media screen and (max-width: 479px) {
+  .button {
+    padding: 18px 36px;
+    font-size: 15px;
+  }
+}
+
+.button.blog {
+  margin-top: 60px;
+}
+
+.button.next {
+  margin-top: 100px;
+  padding-left: 44px;
+}
+
+.next {
+  margin-top: 60px;
+}
