@@ -1,28 +1,24 @@
 import { PostBody, PostTop } from "@/devlink";
 import React from "react";
 import BlogBody from "@/components/BlogBody";
-
-async function getData(id) {
-  const res = await fetch(`http://localhost:3000/api/posts/${id}`, {
-    cache: "no-store",
-  });
-
-  if (!res.ok) {
-    return notFound();
-  }
-
-  return res.json();
-}
+import getPost from "@/lib/getPost";
+import getAllPosts from "@/lib/getAllPosts";
 
 export async function generateMetadata({ params }) {
-  const post = await getData(params.id);
+  const post = await getPost(params.id);
+  if (!post.title) {
+    return {
+      title: "User Not Found",
+    };
+  }
   return {
     title: post.title,
   };
 }
 
 const Post = async ({ params }) => {
-  const data = await getData(params.id);
+  const data = await getPost(params.id);
+  if (!data.title) notFound();
   return (
     <div>
       <PostTop heading={data.title} />
@@ -32,3 +28,10 @@ const Post = async ({ params }) => {
 };
 
 export default Post;
+
+export async function generateStaticParams() {
+  const posts = await getAllPosts();
+  return posts.map((post) => ({
+    id: post._id,
+  }));
+}

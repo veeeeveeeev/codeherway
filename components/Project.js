@@ -4,22 +4,11 @@ import {
   ProjectWrapper,
   ProjectWrapper2,
 } from "@/devlink";
+import getAllProjects from "@/lib/getAllProjects";
 import React from "react";
 
-async function getData() {
-  const res = await fetch("http://localhost:3000/api/projects", {
-    cache: "no-store",
-  });
-
-  if (!res.ok) {
-    return notFound();
-  }
-
-  return res.json();
-}
-
 const Project = async () => {
-  const projects = await getData();
+  const projects = await getAllProjects();
   const editorial = projects.filter(({ cat }) => {
     return cat == "Editorial";
   });
