@@ -6,7 +6,14 @@ export const GET = async (req) => {
   try {
     await connect();
     const projects = await Project.find();
-    return new NextResponse(JSON.stringify(projects), { status: 200 });
+    return new NextResponse(JSON.stringify(projects), {
+      status: 200,
+      headers: {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+        "Access-Control-Allow-Headers": "Content-Type, Authorization",
+      },
+    });
   } catch (err) {
     return new NextResponse("Database Error", { status: 500 });
   }
@@ -22,7 +29,14 @@ export const POST = async (request) => {
 
     await newProject.save();
 
-    return new NextResponse(JSON.stringify(newProject), { status: 201 });
+    return new NextResponse(JSON.stringify(newProject), {
+      status: 201,
+      headers: {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+        "Access-Control-Allow-Headers": "Content-Type, Authorization",
+      },
+    });
   } catch (err) {
     return new NextResponse("Database Error", { status: 500 });
   }

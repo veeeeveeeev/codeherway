@@ -10,7 +10,14 @@ export const GET = async (request, { params }) => {
 
     const post = await Post.findById(id);
 
-    return new NextResponse(JSON.stringify(post), { status: 200 });
+    return new NextResponse(JSON.stringify(post), {
+      status: 200,
+      headers: {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+        "Access-Control-Allow-Headers": "Content-Type, Authorization",
+      },
+    });
   } catch (err) {
     return new NextResponse("Database Error", { status: 500 });
   }
