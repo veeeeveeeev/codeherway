@@ -57,7 +57,7 @@
   height: 100%;
   transition-duration: 400ms;
   transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .client-logo.large:hover {
