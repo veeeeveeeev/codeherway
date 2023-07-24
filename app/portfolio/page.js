@@ -5,9 +5,8 @@ import React from "react";
 const page = () => {
   return (
     <div>
-      hi
-      {/* <PortfolioTop headingTopText="DESIGNING THE DIGITAL FUTURE, PIXEL BY PIXEL" />
-      <PortfolioBody projectWrapperSlot={<Project />} /> */}
+      <PortfolioTop headingTopText="DESIGNING THE DIGITAL FUTURE, PIXEL BY PIXEL" />
+      <PortfolioBody projectWrapperSlot={<Project />} />
     </div>
   );
 };
