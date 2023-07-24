@@ -516,13 +516,13 @@ html.w-mod-touch * {
 }
 .w-button {
   cursor: pointer;
+  text-decoration: none;
   /* display: inline-block;
   padding: 9px 15px;
   background-color: #3898EC;
   color: white;
   border: 0;
   line-height: inherit;
-  text-decoration: none;
   border-radius: 0; */
 }
 input.w-button {
@@ -2052,20 +2052,20 @@ textarea.w-select {
 .w-nav-link.w--current {
   color: #0082f3;
 }
-.w-nav-menu {
+/* .w-nav-menu {
   position: relative;
   float: right;
-}
+} */
 [data-nav-menu-open] {
   display: block !important;
-  position: absolute;
+  /* position: absolute;
   top: 100%;
   left: 0;
   right: 0;
   background: #c8c8c8;
   text-align: center;
   overflow: visible;
-  min-width: 200px;
+  min-width: 200px; */
 }
 .w--nav-link-open {
   display: block;
@@ -2119,7 +2119,7 @@ textarea.w-select {
   outline: 0;
 }
 .w-nav-button.w--open {
-  background-color: #c8c8c8;
+  /* background-color: #c8c8c8; */
   color: white;
 }
 .w-nav[data-collapse="all"] .w-nav-menu {
@@ -2498,7 +2498,7 @@ figcaption {
 .w-layout-grid {
   display: grid;
   grid-auto-columns: 1fr;
-  grid-template-columns: 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr; */
   grid-template-rows: auto auto;
   grid-row-gap: 16px;
   grid-column-gap: 16px;
