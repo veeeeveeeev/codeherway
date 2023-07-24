@@ -1,14 +1,19 @@
+"use client";
 import {
   BlogBody,
   BlogComponent,
   BlogTop,
   SectionCallToAction,
 } from "@/devlink";
-import getAllPosts from "@/lib/getAllPosts";
-import React from "react";
+// import getAllPosts from "@/lib/getAllPosts";
+import useSWR from "swr";
 
-const Blog = async () => {
-  const data = await getAllPosts();
+const fetcher = (...args) => fetch(...args).then((res) => res.json());
+
+const Blog = () => {
+  const { data, error } = useSWR("/api/posts", fetcher);
+  if (error) return <div>Failed to load</div>;
+  if (!data) return <div>Loading...</div>;
 
   return (
     <div>

@@ -1,9 +1,13 @@
+"use client";
 import { PostBody, PostTop } from "@/devlink";
 import React from "react";
 import BlogBody from "@/components/BlogBody";
 import getPost from "@/lib/getPost";
-import getAllPosts from "@/lib/getAllPosts";
+// import getAllPosts from "@/lib/getAllPosts";
 import { notFound } from "next/navigation";
+import useSWR from "swr";
+
+const fetcher = (...args) => fetch(...args).then((res) => res.json());
 
 export async function generateMetadata({ params }) {
   const post = await getPost(params.id);
@@ -17,9 +21,10 @@ export async function generateMetadata({ params }) {
   };
 }
 
-const Post = async ({ params }) => {
-  const data = await getPost(params.id);
-  if (!data.title) notFound();
+const Post = ({ params }) => {
+  const { data, error } = useSWR(`/api/posts/${params.id}`, fetcher);
+  if (error) return notFound();
+  if (!data) return <div>Loading...</div>;
   return (
     <div>
       <PostTop heading={data.title} />
