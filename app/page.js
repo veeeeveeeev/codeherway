@@ -7,21 +7,15 @@ import {
 import getAllPosts from "@/lib/getAllPosts";
 
 const Home = async () => {
-  // const data = await getAllPosts();
-  // const feature = data.filter(({ feature }) => {
-  //   return feature;
-  // });
+  const data = await getAllPosts();
+  const feature = data.filter(({ feature }) => {
+    return feature;
+  });
 
   return (
     <>
       <SectionHero />
       <HomeBlog
-        header="BLOG - CODE HER WAY"
-        homeBlogComponent={<HomeBlogComponent />}
-        buttonText="VIEW ALL"
-        blogBtnLink={{ href: "/blog" }}
-      />
-      {/* <HomeBlog
         header="BLOG - CODE HER WAY"
         homeBlogComponent={feature.map((post) => (
           <HomeBlogComponent
@@ -34,7 +28,7 @@ const Home = async () => {
         ))}
         buttonText="VIEW ALL"
         blogBtnLink={{ href: "/blog" }}
-      /> */}
+      />
       <SectionCallToAction />
     </>
   );
