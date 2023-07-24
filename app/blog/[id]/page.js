@@ -4,25 +4,28 @@ import BlogBody from "@/components/BlogBody";
 import getPost from "@/lib/getPost";
 import getAllPosts from "@/lib/getAllPosts";
 
-export async function generateMetadata({ params }) {
-  const post = await getPost(params.id);
-  if (!post.title) {
-    return {
-      title: "User Not Found",
-    };
-  }
-  return {
-    title: post.title,
-  };
-}
+// export async function generateMetadata({ params }) {
+//   const post = await getPost(params.id);
+//   if (!post.title) {
+//     return {
+//       title: "User Not Found",
+//     };
+//   }
+//   return {
+//     title: post.title,
+//   };
+// }
 
 const Post = async ({ params }) => {
-  const data = await getPost(params.id);
-  if (!data.title) notFound();
+  // const data = await getPost(params.id);
+  // if (!data.title) notFound();
   return (
     <div>
-      <PostTop heading={data.title} />
-      <PostBody image={data.image} richText={<BlogBody data={data} />} />
+      <PostTop heading="hello" />
+      <PostBody />
+
+      {/* <PostTop heading={data.title} />
+      <PostBody image={data.image} richText={<BlogBody data={data} />} /> */}
     </div>
   );
 };
