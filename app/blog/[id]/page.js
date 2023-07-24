@@ -3,6 +3,7 @@ import React from "react";
 import BlogBody from "@/components/BlogBody";
 import getPost from "@/lib/getPost";
 import getAllPosts from "@/lib/getAllPosts";
+import { notFound } from "next/navigation";
 
 export async function generateMetadata({ params }) {
   const post = await getPost(params.id);
