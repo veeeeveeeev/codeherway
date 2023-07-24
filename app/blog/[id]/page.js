@@ -29,9 +29,9 @@ const Post = async ({ params }) => {
 
 export default Post;
 
-export async function generateStaticParams() {
-  const posts = await getAllPosts();
-  return posts.map((post) => ({
-    id: post.id,
-  }));
-}
+// export async function generateStaticParams() {
+//   const posts = await getAllPosts();
+//   return posts.map((post) => ({
+//     id: post.id,
+//   }));
+// }
