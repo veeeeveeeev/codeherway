@@ -1,20 +1,13 @@
-"use client";
 import {
   HomeBlog,
   HomeBlogComponent,
   SectionCallToAction,
   SectionHero,
 } from "@/devlink";
-// import getAllPosts from "@/lib/getAllPosts";
-import useSWR from "swr";
+import getAllPosts from "@/lib/getAllPosts";
 
-const fetcher = (...args) => fetch(...args).then((res) => res.json());
-
-const Home = () => {
-  const { data, error } = useSWR("/api/posts", fetcher);
-  if (error) return <div>Failed to load</div>;
-  if (!data) return <div>Loading...</div>;
-
+const Home = async () => {
+  const data = await getAllPosts();
   const feature = data.filter(({ feature }) => {
     return feature;
   });
