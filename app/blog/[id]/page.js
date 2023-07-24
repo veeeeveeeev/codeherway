@@ -32,6 +32,6 @@ export default Post;
 export async function generateStaticParams() {
   const posts = await getAllPosts();
   return posts.map((post) => ({
-    id: post._id,
+    id: post.id,
   }));
 }

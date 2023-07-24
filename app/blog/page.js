@@ -16,11 +16,11 @@ const Blog = async () => {
       <BlogBody
         blogComponent={data.map((post) => (
           <BlogComponent
-            key={post._id}
-            imageBlog={post.image}
+            key={post.id}
+            // imageBlog={post.image}
             headingBlog={post.title}
-            catBlog={post.cat}
-            headingLink={{ href: `/blog/${post._id}` }}
+            catBlog={post.title}
+            headingLink={{ href: `/blog/${post.id}` }}
           />
         ))}
       />
