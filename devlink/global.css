@@ -515,15 +515,15 @@ html.w-mod-touch * {
   display: none;
 }
 .w-button {
-  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  /* display: inline-block;
   padding: 9px 15px;
   background-color: #3898ec;
   color: white;
   border: 0;
   line-height: inherit;
-  text-decoration: none;
-  cursor: pointer;
-  border-radius: 0;
+  border-radius: 0; */
 }
 input.w-button {
   -webkit-appearance: button;
@@ -752,7 +752,7 @@ label {
   margin-bottom: 5px;
   font-weight: bold;
 }
-.w-input,
+/* .w-input,
 .w-select {
   display: block;
   width: 100%;
@@ -765,7 +765,7 @@ label {
   vertical-align: middle;
   background-color: #ffffff;
   border: 1px solid #cccccc;
-}
+} */
 .w-input:-moz-placeholder,
 .w-select:-moz-placeholder {
   color: #999;
@@ -2015,11 +2015,11 @@ textarea.w-select {
   margin-left: 15px;
   clear: none;
 }
-.w-nav {
+/* .w-nav {
   position: relative;
   background: #dddddd;
   z-index: 1000;
-}
+} */
 .w-nav:before,
 .w-nav:after {
   content: " ";
@@ -2052,20 +2052,20 @@ textarea.w-select {
 .w-nav-link.w--current {
   color: #0082f3;
 }
-.w-nav-menu {
+/* .w-nav-menu {
   position: relative;
   float: right;
-}
+} */
 [data-nav-menu-open] {
   display: block !important;
-  position: absolute;
+  /* position: absolute;
   top: 100%;
   left: 0;
   right: 0;
   background: #c8c8c8;
   text-align: center;
   overflow: visible;
-  min-width: 200px;
+  min-width: 200px; */
 }
 .w--nav-link-open {
   display: block;
