@@ -12,19 +12,27 @@ export function LargeProject({
   as: _Component = _Builtin.Block,
   clientLogoImage = "https://uploads-ssl.webflow.com/64a66f68b6db9c22b28bd749/64b36796b9a22c5556762d61_280193392_4995333507180924_1046172666077112019_n.jpg",
   projectTitle = "This is some text inside of a div block.",
+
+  link = {
+    href: "#",
+  },
 }) {
   _interactions.useInteractions(_interactionsData, _styles);
 
   return (
     <_Component
-      className={_utils.cx(_styles, "client")}
+      className={_utils.cx(_styles, "client", "center")}
       id={_utils.cx(
         _styles,
         "w-node-_206522c1-d988-ca66-45b3-8a46aa14697b-aa14697b"
       )}
       tag="div"
     >
-      <_Builtin.Block className={_utils.cx(_styles, "div-block")} tag="div">
+      <_Builtin.Link
+        className={_utils.cx(_styles, "div-block")}
+        button={false}
+        options={link}
+      >
         <_Builtin.Block
           className={_utils.cx(_styles, "text-block-2")}
           tag="div"
@@ -40,7 +48,7 @@ export function LargeProject({
           alt=""
           src={clientLogoImage}
         />
-      </_Builtin.Block>
+      </_Builtin.Link>
     </_Component>
   );
 }

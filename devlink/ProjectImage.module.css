@@ -1,0 +1,11 @@
+.image-project-main {
+  width: 80%;
+  margin-bottom: 90px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 767px) {
+  .image-project-main {
+    margin-bottom: 50px;
+  }
+}

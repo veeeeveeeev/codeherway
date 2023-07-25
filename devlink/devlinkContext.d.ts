@@ -14,6 +14,8 @@ export declare type RenderImage = React.FC<
 >;
 export declare const DevLinkContext: any;
 declare type DevLinkProviderProps = {
+  renderLink?: RenderLink;
+  renderImage?: RenderImage;
   children: React.ReactNode;
 };
 export declare const DevLinkProvider: React.FC<DevLinkProviderProps>;

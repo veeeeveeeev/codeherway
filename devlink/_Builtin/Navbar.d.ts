@@ -1,6 +1,6 @@
 import * as React from "react";
 import { EASING_FUNCTIONS } from "../utils";
-import { LinkProps, ContainerProps } from "./Basic";
+import { LinkProps, TagProps } from "./Basic";
 declare const BREAKPOINTS: {
   medium: number;
   small: number;
@@ -43,7 +43,7 @@ declare type NavbarProps = {
     | React.ReactElement<NavbarChildrenType>;
 };
 export declare function NavbarWrapper(props: NavbarProps): JSX.Element;
-declare type NavbarContainerProps = ContainerProps & {
+declare type NavbarContainerProps = TagProps & {
   toggleOpen: () => void;
   isOpen: boolean;
   children: React.ReactNode;

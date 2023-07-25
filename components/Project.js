@@ -25,28 +25,52 @@ const Project = async () => {
     <>
       <ProjectWrapper
         subheadingText="Editorial"
-        projectLargeSlot={projects[0].images.map((image) => (
-          <LargeProject key={image} clientLogoImage={image} projectTitle=" " />
+        projectLargeSlot={editorial.map((project) => (
+          <LargeProject
+            key={project._id}
+            clientLogoImage={project.images[0]}
+            projectTitle={project.title}
+            link={{ href: `/portfolio/${project._id}` }}
+          />
         ))}
       />
-      {/* <ProjectWrapper
+      <br />
+      <br />
+      <ProjectWrapper2
         subheadingText="Poster"
-        projectLargeSlot={poster.map((pic) => (
-          <LargeProject clientLogoImage={pic.images[0]} projectTitle=" " />
+        projectSmallSlot={poster.map((project) => (
+          <ProjectSmall
+            key={project._id}
+            clientLogoImage2={project.images[0]}
+            projectTitle={project.title}
+            link={{ href: `/portfolio/${project._id}` }}
+          />
         ))}
       />
+      <br />
+      <br />
       <ProjectWrapper
         subheadingText="Merch"
-        projectLargeSlot={merch.map((pic) => (
-          <LargeProject clientLogoImage={pic.images[0]} projectTitle=" " />
+        projectLargeSlot={merch.map((project) => (
+          <LargeProject
+            key={project._id}
+            clientLogoImage={project.images[0]}
+            projectTitle={project.title}
+            link={{ href: `/portfolio/${project._id}` }}
+          />
         ))}
-      /> */}
+      />
       <br />
       <br />
       <ProjectWrapper2
         subheadingText2="Promo"
-        projectSmallSlot={projects[1].images.map((image) => (
-          <ProjectSmall key={image} clientLogoImage2={image} projectTitle=" " />
+        projectSmallSlot={promo.map((project) => (
+          <ProjectSmall
+            key={project._id}
+            clientLogoImage2={project.images[0]}
+            projectTitle={project.title}
+            link={{ href: `/portfolio/${project._id}` }}
+          />
         ))}
       />
     </>

@@ -74,7 +74,7 @@ export declare function Section({
     tag: React.ElementType;
   }
 >): React.ReactElement<any, string | React.JSXElementConstructor<any>>;
-export declare type ContainerProps = Props<
+export declare type TagProps = Props<
   keyof HTMLElementTagNameMap,
   {
     tag?: React.ElementType;
@@ -84,6 +84,46 @@ export declare const Container: React.ForwardRefExoticComponent<
   ElementProps<keyof HTMLElementTagNameMap> & {
     tag?: React.ElementType<any> | undefined;
   } & React.RefAttributes<unknown>
+>;
+export declare function BlockContainer({
+  tag,
+  className,
+  ...props
+}: TagProps): React.ReactElement<
+  any,
+  string | React.JSXElementConstructor<any>
+>;
+export declare function HFlex({
+  tag,
+  className,
+  ...props
+}: TagProps): React.ReactElement<
+  any,
+  string | React.JSXElementConstructor<any>
+>;
+export declare function VFlex({
+  tag,
+  className,
+  ...props
+}: TagProps): React.ReactElement<
+  any,
+  string | React.JSXElementConstructor<any>
+>;
+export declare function Layout({
+  tag,
+  className,
+  ...props
+}: TagProps): React.ReactElement<
+  any,
+  string | React.JSXElementConstructor<any>
+>;
+export declare function Cell({
+  tag,
+  className,
+  ...props
+}: TagProps): React.ReactElement<
+  any,
+  string | React.JSXElementConstructor<any>
 >;
 declare type HtmlEmbedProps = Props<
   "div",

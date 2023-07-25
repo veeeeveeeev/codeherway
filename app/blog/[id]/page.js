@@ -2,8 +2,7 @@ import { PostBody, PostTop } from "@/devlink";
 import React from "react";
 import BlogBody from "@/components/BlogBody";
 import getPost from "@/lib/getPost";
-import getAllPosts from "@/lib/getAllPosts";
-
+import { notFound } from "next/navigation";
 export async function generateMetadata({ params }) {
   const post = await getPost(params.id);
   if (!post.title) {
@@ -28,10 +27,3 @@ const Post = async ({ params }) => {
 };
 
 export default Post;
-
-// export async function generateStaticParams() {
-//   const posts = await getAllPosts();
-//   return posts.map((post) => ({
-//     id: post.id,
-//   }));
-// }

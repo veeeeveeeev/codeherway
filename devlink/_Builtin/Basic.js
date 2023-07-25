@@ -67,6 +67,36 @@ export const Container = React.forwardRef(function Container(
     ...props,
   });
 });
+export function BlockContainer({ tag = "div", className = "", ...props }) {
+  return React.createElement(tag, {
+    className: className + " w-layout-blockcontainer",
+    ...props,
+  });
+}
+export function HFlex({ tag = "div", className = "", ...props }) {
+  return React.createElement(tag, {
+    className: className + " w-layout-hflex",
+    ...props,
+  });
+}
+export function VFlex({ tag = "div", className = "", ...props }) {
+  return React.createElement(tag, {
+    className: className + " w-layout-vflex",
+    ...props,
+  });
+}
+export function Layout({ tag = "div", className = "", ...props }) {
+  return React.createElement(tag, {
+    className: className + " w-layout-layout wf-layout-layout",
+    ...props,
+  });
+}
+export function Cell({ tag = "div", className = "", ...props }) {
+  return React.createElement(tag, {
+    className: className + " w-layout-cell",
+    ...props,
+  });
+}
 export function HtmlEmbed({
   tag = "div",
   className = "",

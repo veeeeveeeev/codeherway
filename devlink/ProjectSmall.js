@@ -12,6 +12,10 @@ export function ProjectSmall({
   as: _Component = _Builtin.Block,
   clientLogoImage2 = "https://uploads-ssl.webflow.com/64a66f68b6db9c22b28bd749/64b2ae3a605b77f62557d59b_Copy%20of%20mai%20mo%20don.jpg",
   projectTitle = "Hiellllhfoaiagihaeohi",
+
+  link = {
+    href: "#",
+  },
 }) {
   _interactions.useInteractions(_interactionsData, _styles);
 
@@ -24,7 +28,11 @@ export function ProjectSmall({
       )}
       tag="div"
     >
-      <_Builtin.Block className={_utils.cx(_styles, "div-block")} tag="div">
+      <_Builtin.Link
+        className={_utils.cx(_styles, "div-block")}
+        button={false}
+        options={link}
+      >
         <_Builtin.Block
           className={_utils.cx(_styles, "text-block-2")}
           tag="div"
@@ -40,7 +48,7 @@ export function ProjectSmall({
           alt=""
           src={clientLogoImage2}
         />
-      </_Builtin.Block>
+      </_Builtin.Link>
     </_Component>
   );
 }
