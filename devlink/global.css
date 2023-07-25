@@ -2119,7 +2119,7 @@ textarea.w-select {
   outline: 0;
 }
 .w-nav-button.w--open {
-  background-color: #c8c8c8;
+  /* background-color: #c8c8c8; */
   color: white;
 }
 .w-nav[data-collapse="all"] .w-nav-menu {
