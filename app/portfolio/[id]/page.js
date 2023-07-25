@@ -24,7 +24,7 @@ const Detail = async ({ params }) => {
       <ProjectTop title={data.title} desc={data.desc} />
       <ProjectBody
         projectImage={data.images.map((img) => (
-          <ProjectImage image={img} />
+          <ProjectImage key={img} image={img} />
         ))}
       />
     </>
