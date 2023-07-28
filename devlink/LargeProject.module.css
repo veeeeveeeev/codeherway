@@ -63,7 +63,7 @@
 }
 
 .client-logo.large:hover {
-  position: static;
+  position: relative;
 
   display: block;
   overflow: visible;
