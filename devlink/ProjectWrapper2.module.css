@@ -68,3 +68,6 @@
   grid-row-start: span 1;
   grid-row-end: span 1;
 }
+.block-about {
+  margin: 0 auto;
+}
