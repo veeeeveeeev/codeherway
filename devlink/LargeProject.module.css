@@ -9,13 +9,13 @@
   left: 50%;
   top: 50%;
 
-  display: block;
+  display: none;
   float: none;
   clear: none;
 
   border-radius: 1px;
 
-  opacity: 0;
+  /* opacity: 0; */
 
   transform: translate(-50%, -50%);
 
@@ -28,7 +28,7 @@
   transition: all 400ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 .div-block:hover + .text-block-2 {
-  opacity: 1;
+  display: block;
 }
 .client-logo:hover {
   opacity: 0.2;
