@@ -30,6 +30,9 @@
 
 .client-logo:hover {
   opacity: 0.2;
+  .text-block-2 {
+    opacity: 1;
+  }
 }
 
 /* @media screen and (max-width: 991px) {
