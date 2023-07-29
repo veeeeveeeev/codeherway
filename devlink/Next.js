@@ -5,14 +5,15 @@ import _styles from "./Next.module.css";
 
 export function Next({
   as: _Component = _Builtin.Link,
-
+  hide,
   next = {
     href: "#",
   },
 }) {
+  console.log(hide);
   return (
     <_Component
-      className={_utils.cx(_styles, "button", "next")}
+      className={_utils.cx(_styles, "button", "next", !hide && "hide")}
       button={false}
       options={next}
     >

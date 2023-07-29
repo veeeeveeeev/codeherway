@@ -6,14 +6,14 @@ import _styles from "./Previous.module.css";
 export function Previous({
   as: _Component = _Builtin.Link,
   hidden = true,
-
+  hide = true,
   back = {
     href: "#",
   },
 }) {
   return hidden ? (
     <_Component
-      className={_utils.cx(_styles, "button", "next")}
+      className={_utils.cx(_styles, "button", "next", !hide && "hide")}
       button={false}
       options={back}
     >

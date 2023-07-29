@@ -12,11 +12,13 @@ const Pagination = ({ next, prev }) => {
   return (
     <>
       <Previous
+        hide={next && prev}
         hidden={prev}
         back={{ href: `/blog?page=${Number(page) - 1}&per_page=${per_page}` }}
       />
       {next && (
         <Next
+          hide={next && prev}
           next={{ href: `/blog?page=${Number(page) + 1}&per_page=${per_page}` }}
         />
       )}

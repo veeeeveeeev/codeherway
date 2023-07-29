@@ -10,7 +10,7 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
 }
-
+/* 
 .collection-item-works-2:nth-child(even) {
   display: grid;
   flex-direction: row-reverse;
@@ -19,7 +19,7 @@
   grid-row-gap: 100px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-}
+} */
 
 @media screen and (max-width: 767px) {
   .collection-item-works-2 {
