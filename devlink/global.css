@@ -1,6 +1,6 @@
 /* Fonts */
 
-@import url("https://fonts.googleapis.com/css?family=Taviraj:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic&subset=latin");
+@import url("https://fonts.googleapis.com/css?family=Taviraj:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic|Material+Symbols Outlined:300,regular&subset=latin");
 
 @font-face {
   font-family: "Creato Display";
@@ -519,7 +519,7 @@ html.w-mod-touch * {
   cursor: pointer;
   /* display: inline-block;
   padding: 9px 15px;
-  background-color: #3898ec;
+  background-color: #3898EC;
   color: white;
   border: 0;
   line-height: inherit;
@@ -2062,7 +2062,7 @@ textarea.w-select {
   top: 100%;
   left: 0;
   right: 0;
-  background: #c8c8c8;
+  background: #C8C8C8;
   text-align: center;
   overflow: visible;
   min-width: 200px; */
@@ -2119,7 +2119,7 @@ textarea.w-select {
   outline: 0;
 }
 .w-nav-button.w--open {
-  /* background-color: #c8c8c8; */
+  /* background-color: #C8C8C8; */
   color: white;
 }
 .w-nav[data-collapse="all"] .w-nav-menu {

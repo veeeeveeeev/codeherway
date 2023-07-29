@@ -1,0 +1,65 @@
+.button {
+  padding: 20px 40px;
+
+  border-radius: 50px;
+
+  background-color: transparent;
+
+  box-shadow: inset 0 0 0 2px var(--light-f4c73625);
+
+  transition: color 300ms cubic-bezier(.25, .46, .45, .94),box-shadow 300ms cubic-bezier(.25, .46, .45, .94);
+
+  color: var(--light-f4c73625);
+  font-size: 16px;
+  line-height: 120%;
+  font-weight: 500;
+  letter-spacing: 1.85px;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  box-shadow: inset 0 0 0 40px var(--light-f4c73625);
+  color: var(--dark-bba5272b);
+}
+
+@media screen and (max-width: 479px) {
+  .button {
+    padding: 18px 36px;
+    font-size: 15px;
+  }
+}
+
+.button.blog {
+  margin-top: 60px;
+}
+
+.button.next {
+  display: flex;
+  margin-top: 100px;
+  margin-right: 40px;
+  padding-left: 44px;
+  flex-wrap: nowrap;
+  align-items: center;
+  align-self: auto;
+
+  transition: color 300ms cubic-bezier(.25, .46, .45, .94),box-shadow 300ms cubic-bezier(.25, .46, .45, .94);
+
+  text-decoration: none;
+}
+
+.next {
+  margin-top: 60px;
+}
+
+.text-block-6 {
+  margin-right: 4px;
+  margin-left: 4px;
+}
+
+.text-block-5 {
+  display: inline-block;
+  font-family: 'Material Symbols Outlined';
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: lowercase;
+}

@@ -1,0 +1,27 @@
+"use client";
+import { Next, Previous } from "@/devlink";
+import { useSearchParams } from "next/navigation";
+import React from "react";
+
+const Pagination = ({ next, prev }) => {
+  const searchParams = useSearchParams();
+
+  const page = searchParams.get("page") ?? "1";
+  const per_page = searchParams.get("per_page") ?? "5";
+
+  return (
+    <>
+      <Previous
+        hidden={prev}
+        back={{ href: `/blog?page=${Number(page) - 1}&per_page=${per_page}` }}
+      />
+      {next && (
+        <Next
+          next={{ href: `/blog?page=${Number(page) + 1}&per_page=${per_page}` }}
+        />
+      )}
+    </>
+  );
+};
+
+export default Pagination;
