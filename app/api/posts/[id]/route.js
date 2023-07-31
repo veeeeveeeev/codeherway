@@ -38,7 +38,7 @@ export const PUT = async (request, { params }) => {
   try {
     await connect();
 
-    const post = await Post.findOneAndUpdate({ id: id }, body, { new: true });
+    const post = await Post.findOneAndUpdate({ _id: id }, body, { new: true });
 
     return new NextResponse(JSON.stringify(post), { status: 200 });
   } catch (err) {

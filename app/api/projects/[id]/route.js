@@ -40,7 +40,7 @@ export const PUT = async (request, { params }) => {
   try {
     await connect();
 
-    const post = await Project.findOneAndUpdate({ id: id }, body, {
+    const post = await Project.findOneAndUpdate({ _id: id }, body, {
       new: true,
     });
 
