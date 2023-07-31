@@ -8,11 +8,6 @@ export const GET = async (req) => {
     const posts = await Post.find();
     return new NextResponse(JSON.stringify(posts), {
       status: 200,
-      headers: {
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
-        "Access-Control-Allow-Headers": "Content-Type, Authorization",
-      },
     });
   } catch (err) {
     return new NextResponse("Database Error", { status: 500 });
@@ -31,11 +26,6 @@ export const POST = async (request) => {
 
     return new NextResponse(JSON.stringify(newPost), {
       status: 201,
-      headers: {
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
-        "Access-Control-Allow-Headers": "Content-Type, Authorization",
-      },
     });
   } catch (err) {
     return new NextResponse("Database Error", { status: 500 });
