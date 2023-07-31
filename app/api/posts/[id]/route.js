@@ -12,11 +12,6 @@ export const GET = async (request, { params }) => {
 
     return new NextResponse(JSON.stringify(post), {
       status: 200,
-      headers: {
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
-        "Access-Control-Allow-Headers": "Content-Type, Authorization",
-      },
     });
   } catch (err) {
     return new NextResponse("Database Error", { status: 500 });
@@ -32,6 +27,20 @@ export const DELETE = async (request, { params }) => {
     await Post.findByIdAndDelete(id);
 
     return new NextResponse("Post has been deleted", { status: 200 });
+  } catch (err) {
+    return new NextResponse("Database Error", { status: 500 });
+  }
+};
+
+export const PUT = async (request, { params }) => {
+  const { id } = params;
+  const body = await request.json();
+  try {
+    await connect();
+
+    const post = await Post.findOneAndUpdate({ id: id }, body, { new: true });
+
+    return new NextResponse(JSON.stringify(post), { status: 200 });
   } catch (err) {
     return new NextResponse("Database Error", { status: 500 });
   }
