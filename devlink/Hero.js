@@ -113,14 +113,14 @@ export function Hero({
             loading="eager"
             width="auto"
             height="auto"
-            src="https://res.cloudinary.com/dhq9zgqtp/image/upload/v1690858845/codeherway/portfolio/editorial/Aurora_1_kvckrr.jpg"
+            src="https://res.cloudinary.com/dhq9zgqtp/image/upload/v1690860404/codeherway/portfolio/merch/cata4_rcuzb7.jpg"
           />
           <_Builtin.Image
             className={_utils.cx(_styles, "img-hero-5")}
             loading="eager"
             width="auto"
             height="auto"
-            src="https://res.cloudinary.com/dhq9zgqtp/image/upload/v1690860406/codeherway/portfolio/merch/card_2_uvjtjq.jpg"
+            src="https://res.cloudinary.com/dhq9zgqtp/image/upload/v1690859537/codeherway/portfolio/poster/spicy_giufcc.jpg"
           />
           <_Builtin.Image
             className={_utils.cx(_styles, "img-hero-6")}
@@ -141,7 +141,7 @@ export function Hero({
             loading="eager"
             width="auto"
             height="auto"
-            src="https://res.cloudinary.com/dhq9zgqtp/image/upload/v1690860404/codeherway/portfolio/merch/cata1_aamt0y.jpg"
+            src="https://res.cloudinary.com/dhq9zgqtp/image/upload/v1690859539/codeherway/portfolio/poster/Copy_of_sNOWWHITE_quc4zp.jpg"
           />
           <_Builtin.Image
             className={_utils.cx(_styles, "img-hero-9")}
@@ -157,13 +157,13 @@ export function Hero({
             height="auto"
             src="https://res.cloudinary.com/dhq9zgqtp/image/upload/v1690860927/codeherway/portfolio/promo/HAT_1_gk0pdk.jpg"
           />
-          <_Builtin.Image
+          {/* <_Builtin.Image
             className={_utils.cx(_styles, "img-hero-11")}
             loading="eager"
             width="auto"
             height="auto"
             src="https://res.cloudinary.com/dhq9zgqtp/image/upload/v1690859539/codeherway/portfolio/poster/Copy_of_sNOWWHITE_quc4zp.jpg"
-          />
+          /> soon to replaced by a red pic*/}
           <_Builtin.Image
             className={_utils.cx(_styles, "img-hero-12")}
             loading="eager"
