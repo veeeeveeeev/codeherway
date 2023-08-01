@@ -92,35 +92,35 @@ export function Hero({
             loading="eager"
             width="auto"
             height="auto"
-            src="https://uploads-ssl.webflow.com/64a66f68b6db9c22b28bd749/64b2abc6f510a34fa5213b14_cata3.jpg"
+            src="https://res.cloudinary.com/dhq9zgqtp/image/upload/v1690860405/codeherway/portfolio/merch/cata3_e36b4l.jpg"
           />
           <_Builtin.Image
             className={_utils.cx(_styles, "img-hero-2")}
             loading="eager"
             width="auto"
             height="auto"
-            src="https://uploads-ssl.webflow.com/64a66f68b6db9c22b28bd749/64b2ad165e73b516e537468c_Copy%20of%20check%20your%20mail.png"
+            src="https://res.cloudinary.com/dhq9zgqtp/image/upload/v1690860926/codeherway/portfolio/promo/HAT_7_yr5h3c.jpg"
           />
           <_Builtin.Image
             className={_utils.cx(_styles, "img-hero-3")}
             loading="eager"
             width="auto"
             height="auto"
-            src="https://uploads-ssl.webflow.com/64a66f68b6db9c22b28bd749/64b2ad137079905e881b952d_i%20didn%27t%20think%20this%20through.png"
+            src="https://res.cloudinary.com/dhq9zgqtp/image/upload/v1690859537/codeherway/portfolio/poster/nike_x_barbie_jjewjy.jpg"
           />
           <_Builtin.Image
             className={_utils.cx(_styles, "img-hero-4")}
             loading="eager"
             width="auto"
             height="auto"
-            src="https://uploads-ssl.webflow.com/64a66f68b6db9c22b28bd749/64b2ad662a8a72a3d7167eee_cata4.jpg"
+            src="https://res.cloudinary.com/dhq9zgqtp/image/upload/v1690858845/codeherway/portfolio/editorial/Aurora_1_kvckrr.jpg"
           />
           <_Builtin.Image
             className={_utils.cx(_styles, "img-hero-5")}
             loading="eager"
             width="auto"
             height="auto"
-            src="https://uploads-ssl.webflow.com/64a66f68b6db9c22b28bd749/64b2abc71aecdee44b6fa362_spicy.jpg"
+            src="https://res.cloudinary.com/dhq9zgqtp/image/upload/v1690860406/codeherway/portfolio/merch/card_2_uvjtjq.jpg"
           />
           <_Builtin.Image
             className={_utils.cx(_styles, "img-hero-6")}
@@ -134,35 +134,35 @@ export function Hero({
             loading="eager"
             width="auto"
             height="auto"
-            src="https://uploads-ssl.webflow.com/64a66f68b6db9c22b28bd749/64b2ab0fa3284e103ef2c097_unforgiven.png"
+            src="https://res.cloudinary.com/dhq9zgqtp/image/upload/v1690859537/codeherway/portfolio/poster/unforgiven_of7lzi.jpg"
           />
           <_Builtin.Image
             className={_utils.cx(_styles, "img-hero-8")}
             loading="eager"
             width="auto"
             height="auto"
-            src="https://uploads-ssl.webflow.com/64a66f68b6db9c22b28bd749/64b2abc65e73b516e5366291_cata1.jpg"
+            src="https://res.cloudinary.com/dhq9zgqtp/image/upload/v1690860404/codeherway/portfolio/merch/cata1_aamt0y.jpg"
           />
           <_Builtin.Image
             className={_utils.cx(_styles, "img-hero-9")}
             loading="eager"
             width="auto"
             height="auto"
-            src="https://uploads-ssl.webflow.com/64a66f68b6db9c22b28bd749/64b2ab0f766a1d77427553e2_th%E1%BA%BB%20btcArtboard%204.jpg"
+            src="https://res.cloudinary.com/dhq9zgqtp/image/upload/v1690860404/codeherway/portfolio/merch/card_1_ja4knf.jpg"
           />
           <_Builtin.Image
             className={_utils.cx(_styles, "img-hero-10")}
             loading="eager"
             width="auto"
             height="auto"
-            src="https://uploads-ssl.webflow.com/64a66f68b6db9c22b28bd749/64b2ae3a605b77f62557d59b_Copy%20of%20mai%20mo%20don.jpg"
+            src="https://res.cloudinary.com/dhq9zgqtp/image/upload/v1690860927/codeherway/portfolio/promo/HAT_1_gk0pdk.jpg"
           />
           <_Builtin.Image
             className={_utils.cx(_styles, "img-hero-11")}
             loading="eager"
             width="auto"
             height="auto"
-            src="https://uploads-ssl.webflow.com/64a66f68b6db9c22b28bd749/64b2ab10d59d8f1e539f7007_Copy%20of%20sNOWWHITE.png"
+            src="https://res.cloudinary.com/dhq9zgqtp/image/upload/v1690859539/codeherway/portfolio/poster/Copy_of_sNOWWHITE_quc4zp.jpg"
           />
           <_Builtin.Image
             className={_utils.cx(_styles, "img-hero-12")}
