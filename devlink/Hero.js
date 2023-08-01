@@ -157,13 +157,14 @@ export function Hero({
             height="auto"
             src="https://res.cloudinary.com/dhq9zgqtp/image/upload/v1690860927/codeherway/portfolio/promo/HAT_1_gk0pdk.jpg"
           />
-          {/* <_Builtin.Image
+          <_Builtin.Image
             className={_utils.cx(_styles, "img-hero-11")}
             loading="eager"
             width="auto"
             height="auto"
-            src="https://res.cloudinary.com/dhq9zgqtp/image/upload/v1690859539/codeherway/portfolio/poster/Copy_of_sNOWWHITE_quc4zp.jpg"
-          /> soon to replaced by a red pic*/}
+            src="https://res.cloudinary.com/dhq9zgqtp/image/upload/v1690901285/codeherway/Copy_of_gRIMHILDE_page-0002_-_Copy_l8pvhz.jpg"
+          />{" "}
+          soon to replaced by a red pic
           <_Builtin.Image
             className={_utils.cx(_styles, "img-hero-12")}
             loading="eager"
