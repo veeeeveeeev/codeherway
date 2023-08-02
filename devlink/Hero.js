@@ -163,8 +163,7 @@ export function Hero({
             width="auto"
             height="auto"
             src="https://res.cloudinary.com/dhq9zgqtp/image/upload/v1690901285/codeherway/Copy_of_gRIMHILDE_page-0002_-_Copy_l8pvhz.jpg"
-          />{" "}
-          soon to replaced by a red pic
+          />
           <_Builtin.Image
             className={_utils.cx(_styles, "img-hero-12")}
             loading="eager"
