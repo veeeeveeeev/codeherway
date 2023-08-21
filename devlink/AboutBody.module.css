@@ -1,0 +1,194 @@
+.section {
+  display: flex;
+  padding-right: 12%;
+  padding-left: 12%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@media screen and (max-width: 479px) {
+  .section {
+    padding-right: 8%;
+    padding-left: 8%;
+  }
+}
+
+.section.page {
+  padding-bottom: 160px;
+}
+
+@media screen and (max-width: 767px) {
+  .section.page {
+    padding-bottom: 130px;
+  }
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  grid-row-gap: 120px;
+}
+
+@media screen and (max-width: 767px) {
+  .about {
+    grid-row-gap: 80px;
+  }
+}
+
+.grid-about-2 {
+  align-items: start;
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+  grid-template-columns: minmax(auto, 160px) minmax(auto, 780px);
+  grid-template-rows: auto;
+}
+
+@media screen and (max-width: 991px) {
+  .grid-about-2 {
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .grid-about-2 {
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    grid-template-columns: minmax(auto, 780px);
+  }
+  .image-2 {
+    margin: 0 auto;
+  }
+}
+
+.image-2 {
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 479px) {
+}
+
+.subheading {
+  margin-bottom: 0px;
+}
+
+@media screen and (max-width: 479px) {
+  .subheading {
+    text-align: center;
+  }
+}
+
+.grid-client-2 {
+  align-content: stretch;
+  grid-column-gap: 10px;
+  grid-row-gap: 9px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+}
+
+@media screen and (max-width: 479px) {
+  .grid-client-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.heading-award {
+  margin-bottom: 16px;
+  border-bottom: 1px solid rgba(229, 223, 213, 0.15);
+}
+
+.awards-info {
+  margin-top: 45px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+
+  border-bottom: 1px solid hsla(37.49999999999997, 23.53%, 86.67%, 0.15);
+
+  font-size: 14px;
+  line-height: 120%;
+}
+
+.awards-info.first {
+  margin-top: 0px;
+  border-bottom-style: none;
+  color: var(--paragraphs-718767ea);
+  font-size: 18px;
+  text-decoration: none;
+}
+
+#w-node-_8e9d635d-440f-64a1-137a-629543453d66-43453d63 {
+  grid-column-start: span 1;
+  grid-column-end: span 1;
+  grid-row-start: span 1;
+  grid-row-end: span 1;
+}
+#w-node-_8e9d635d-440f-64a1-137a-629543453d67-43453d63 {
+  grid-column-start: span 1;
+  grid-column-end: span 1;
+  grid-row-start: span 1;
+  grid-row-end: span 1;
+}
+#w-node-_8e9d635d-440f-64a1-137a-629543453d6a-43453d63 {
+  grid-column-start: span 1;
+  grid-column-end: span 1;
+  grid-row-start: span 1;
+  grid-row-end: span 1;
+}
+#w-node-_8e9d635d-440f-64a1-137a-629543453d6d-43453d63 {
+  grid-column-start: span 1;
+  grid-column-end: span 1;
+  grid-row-start: span 1;
+  grid-row-end: span 1;
+}
+#w-node-_8e9d635d-440f-64a1-137a-629543453d6f-43453d63 {
+  grid-column-start: span 1;
+  grid-column-end: span 1;
+  grid-row-start: span 1;
+  grid-row-end: span 1;
+}
+#w-node-_8e9d635d-440f-64a1-137a-629543453d84-43453d63 {
+  grid-column-start: span 1;
+  grid-column-end: span 1;
+  grid-row-start: span 1;
+  grid-row-end: span 1;
+}
+#w-node-_8e9d635d-440f-64a1-137a-629543453d88-43453d63 {
+  grid-column-start: span 1;
+  grid-column-end: span 1;
+  grid-row-start: span 1;
+  grid-row-end: span 1;
+}
+#w-node-_8e9d635d-440f-64a1-137a-629543453d90-43453d63 {
+  grid-column-start: span 1;
+  grid-column-end: span 1;
+  grid-row-start: span 1;
+  grid-row-end: span 1;
+}
+#w-node-_8e9d635d-440f-64a1-137a-629543453d94-43453d63 {
+  grid-column-start: span 1;
+  grid-column-end: span 1;
+  grid-row-start: span 1;
+  grid-row-end: span 1;
+}
+#w-node-_8e9d635d-440f-64a1-137a-629543453d96-43453d63 {
+  grid-column-start: span 1;
+  grid-column-end: span 1;
+  grid-row-start: span 1;
+  grid-row-end: span 1;
+}
+@media screen and (max-width: 479px) {
+  #w-node-_8e9d635d-440f-64a1-137a-629543453d66-43453d63 {
+    justify-self: center;
+  }
+  #w-node-_8e9d635d-440f-64a1-137a-629543453d6d-43453d63 {
+    justify-self: center;
+  }
+  #w-node-_8e9d635d-440f-64a1-137a-629543453d84-43453d63 {
+    justify-self: center;
+  }
+  #w-node-_8e9d635d-440f-64a1-137a-629543453d94-43453d63 {
+    justify-self: center;
+  }
+}

@@ -7,4 +7,5 @@ declare function NewNav(props: {
   blog?: Types.Basic.Link;
   porfolio?: Types.Basic.Link;
   contact?: Types.Basic.Link;
+  about?: Types.Basic.Link;
 }): React.JSX.Element;

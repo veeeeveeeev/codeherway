@@ -19,6 +19,7 @@ export default function RootLayout({ children }) {
               blog={{ href: "/blog" }}
               portfolio={{ href: "/portfolio" }}
               contact={{ href: "/contact" }}
+              about={{ href: "/about" }}
             />
             {children}
           </div>

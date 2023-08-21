@@ -17,22 +17,7 @@ declare type SliderConfig = {
   autoMax: number;
   navInvert: boolean;
 };
-declare type SlideState = {
-  current: number;
-  previous: number;
-};
-export declare const SliderContext: React.Context<
-  SliderConfig & {
-    slideAmount: number;
-    setSlideAmount: React.Dispatch<React.SetStateAction<number>>;
-    slide: SlideState;
-    setCurrentSlide: (current: number) => void;
-    goToNextSlide: () => void;
-    goToPreviousSlide: () => void;
-    isAutoplayPaused: boolean;
-    setAutoplayPause: React.Dispatch<React.SetStateAction<boolean>>;
-  }
->;
+export declare const SliderContext: any;
 declare type SliderChildrenType =
   | SliderSlideProps
   | SliderArrowProps
@@ -47,7 +32,7 @@ declare type SliderWrapperProps = SliderConfig & {
 export declare function SliderWrapper({
   className,
   ...props
-}: SliderWrapperProps): JSX.Element;
+}: SliderWrapperProps): any;
 declare type SliderMaskProps = React.PropsWithChildren<{
   className?: string;
 }>;
@@ -55,7 +40,7 @@ export declare function SliderMask({
   className,
   children,
   ...props
-}: SliderMaskProps): JSX.Element;
+}: SliderMaskProps): any;
 declare type SliderSlideProps = React.PropsWithChildren<{
   style?: React.CSSProperties;
   tag?: string;
@@ -68,18 +53,7 @@ export declare function SliderSlide({
   style,
   index,
   ...props
-}: SliderSlideProps): React.DOMElement<
-  {
-    className: string;
-    style: {};
-    "aria-label": string;
-    role: string;
-    ref: (node: any) => void;
-    "aria-hidden": string;
-    children?: React.ReactNode;
-  },
-  any
->;
+}: SliderSlideProps): any;
 declare type SliderArrowProps = React.PropsWithChildren<{
   className?: string;
   dir: "left" | "right";
@@ -89,12 +63,9 @@ export declare function SliderArrow({
   dir,
   children,
   ...props
-}: SliderArrowProps): JSX.Element;
+}: SliderArrowProps): any;
 declare type SliderNavProps = {
   className?: string;
 };
-export declare function SliderNav({
-  className,
-  ...props
-}: SliderNavProps): JSX.Element;
+export declare function SliderNav({ className, ...props }: SliderNavProps): any;
 export {};
