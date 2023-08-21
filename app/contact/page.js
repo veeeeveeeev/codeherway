@@ -1,5 +1,5 @@
 "use client";
-import { Contact } from "@/devlink";
+import { Contact } from "../../devlink";
 import React from "react";
 
 const page = () => {
