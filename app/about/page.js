@@ -1,4 +1,4 @@
-import { AboutBody, AboutTop } from "../../devlink";
+import { AboutBody, AboutTop } from "@/devlink";
 
 const About = () => {
   return (
