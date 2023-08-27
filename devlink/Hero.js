@@ -162,7 +162,7 @@ export function Hero({
             loading="eager"
             width="auto"
             height="auto"
-            src="https://res.cloudinary.com/dhq9zgqtp/image/upload/v1690901285/codeherway/Copy_of_gRIMHILDE_page-0002_-_Copy_l8pvhz.jpg"
+            src="https://res.cloudinary.com/dhq9zgqtp/image/upload/v1690860928/codeherway/portfolio/promo/AC_t5jhzb.jpg"
           />
           <_Builtin.Image
             className={_utils.cx(_styles, "img-hero-12")}
