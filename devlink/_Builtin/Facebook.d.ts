@@ -1,5 +1,5 @@
 import * as React from "react";
-declare type FacebookProps = React.PropsWithChildren<{
+type FacebookProps = React.PropsWithChildren<{
   className?: string;
   layout?: string;
   width?: number;

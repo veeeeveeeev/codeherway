@@ -28,7 +28,9 @@ export const NavbarContext = React.createContext({
   easing2: "ease",
   easing: "ease",
   getBodyHeight: () => {},
-  getOverlayHeight: () => {},
+  getOverlayHeight: () => {
+    return undefined;
+  },
   isOpen: false,
   noScroll: false,
   toggleOpen: () => {},

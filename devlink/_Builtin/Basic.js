@@ -141,15 +141,21 @@ const columnClass = (width, key) => {
   if (/main$/.test(key)) return `w-col-${width}`;
   return `w-col-${key}-${width}`;
 };
-export function Row({ tag = "div", className = "", grid, children, ...props }) {
+export function Row({
+  tag = "div",
+  className = "",
+  columns,
+  children,
+  ...props
+}) {
   return React.createElement(
     tag,
     { className: className + " w-row", ...props },
-    grid
+    columns
       ? React.Children.map(children, (child, index) => {
           if (child && typeof child === "object" && child.type !== Column)
             return child;
-          const columnClasses = Object.entries(grid.cols ?? {}).reduce(
+          const columnClasses = Object.entries(columns ?? {}).reduce(
             (acc, [key, value]) => {
               const width = transformWidths(
                 value === "custom" ? "6|6" : value,

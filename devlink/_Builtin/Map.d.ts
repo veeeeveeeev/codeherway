@@ -5,7 +5,7 @@ declare global {
     };
   }
 }
-declare type MapWidgetProps = {
+type MapWidgetProps = {
   className?: string;
   apiKey: string;
   zoom?: number;

@@ -1,18 +1,18 @@
 import * as React from "react";
-export declare type ElementProps<T extends keyof HTMLElementTagNameMap> =
+export type ElementProps<T extends keyof HTMLElementTagNameMap> =
   React.HTMLAttributes<HTMLElementTagNameMap[T]>;
-export declare type Props<
+export type Props<
   T extends keyof HTMLElementTagNameMap,
   U = unknown
 > = ElementProps<T> & React.PropsWithChildren<U>;
-declare type BlockProps = React.PropsWithChildren<{
+type BlockProps = React.PropsWithChildren<{
   tag?: React.ElementType;
 }> &
   React.HTMLAttributes<HTMLOrSVGElement>;
 export declare function Block({ tag, ...props }: BlockProps): any;
 export declare function Span(props: Props<"span">): any;
 export declare function Blockquote(props: Props<"blockquote">): any;
-export declare type LinkProps = Props<
+export type LinkProps = Props<
   "a",
   {
     options?: {
@@ -30,7 +30,7 @@ export declare const Link: ({
   button,
   ...props
 }: LinkProps) => any;
-declare type ListProps = Props<
+type ListProps = Props<
   "ul",
   {
     tag?: React.ElementType;
@@ -44,7 +44,7 @@ export declare function List({
   ...props
 }: ListProps): any;
 export declare function ListItem(props: Props<"li">): any;
-declare type ImageProps = React.DetailedHTMLProps<
+type ImageProps = React.DetailedHTMLProps<
   React.ImgHTMLAttributes<HTMLImageElement>,
   HTMLImageElement
 >;
@@ -58,7 +58,7 @@ export declare function Section({
     tag: React.ElementType;
   }
 >): any;
-export declare type TagProps = Props<
+export type TagProps = Props<
   keyof HTMLElementTagNameMap,
   {
     tag?: React.ElementType;
@@ -74,7 +74,7 @@ export declare function HFlex({ tag, className, ...props }: TagProps): any;
 export declare function VFlex({ tag, className, ...props }: TagProps): any;
 export declare function Layout({ tag, className, ...props }: TagProps): any;
 export declare function Cell({ tag, className, ...props }: TagProps): any;
-declare type HtmlEmbedProps = Props<
+type HtmlEmbedProps = Props<
   "div",
   {
     tag?: React.ElementType;
@@ -96,7 +96,7 @@ export declare function Grid({
   tag?: string | undefined;
   className?: string | undefined;
 }): any;
-declare type IconProps = Props<
+type IconProps = Props<
   "div",
   {
     widget: {
@@ -105,11 +105,11 @@ declare type IconProps = Props<
   }
 >;
 export declare function Icon({ widget, className, ...props }: IconProps): any;
-declare type ColumnProps = Props<
+type ColumnProps = Props<
   "div",
   {
     tag: React.ElementType;
-    columnClasses: string;
+    columnClasses?: string;
   }
 >;
 export declare function Column({
@@ -118,15 +118,13 @@ export declare function Column({
   columnClasses,
   ...props
 }: ColumnProps): any;
-declare type RowProps = Props<
+type RowProps = Props<
   "div",
   {
     children: React.ReactElement<typeof Column>[];
     tag: React.ElementType;
-    grid: {
-      cols: {
-        [key: string]: string;
-      };
+    columns: {
+      [key: string]: string;
     };
     value: string;
   }
@@ -134,7 +132,7 @@ declare type RowProps = Props<
 export declare function Row({
   tag,
   className,
-  grid,
+  columns,
   children,
   ...props
 }: RowProps): any;

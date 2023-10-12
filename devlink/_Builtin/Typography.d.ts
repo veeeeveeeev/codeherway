@@ -1,6 +1,6 @@
 import * as React from "react";
 import { type Props } from "./Basic";
-declare type HeadingProps = React.PropsWithChildren<{
+type HeadingProps = React.PropsWithChildren<{
   tag?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
 }> &
   React.HTMLAttributes<HTMLHeadingElement>;
@@ -8,7 +8,7 @@ export declare function Heading({ tag, ...props }: HeadingProps): any;
 export declare function Paragraph(props: Props<"p">): any;
 export declare function Emphasized(props: Props<"em">): any;
 export declare function Strong(props: Props<"strong">): any;
-declare type FigureProps = Props<"figure"> & {
+type FigureProps = Props<"figure"> & {
   figure: {
     align: string;
     type: string;

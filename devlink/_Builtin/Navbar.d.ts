@@ -6,7 +6,7 @@ declare const BREAKPOINTS: {
   small: number;
   tiny: number;
 };
-declare type NavbarConfig = {
+type NavbarConfig = {
   animation: string;
   collapse: keyof typeof BREAKPOINTS;
   docHeight: boolean;
@@ -16,12 +16,12 @@ declare type NavbarConfig = {
   noScroll: boolean;
 };
 export declare const NavbarContext: any;
-declare type NavbarChildrenType =
+type NavbarChildrenType =
   | NavbarContainerProps
   | NavbarBrandProps
   | NavbarMenuProps
   | NavbarButtonProps;
-declare type NavbarProps = {
+type NavbarProps = {
   tag: React.ElementType;
   config: NavbarConfig;
   className?: string;
@@ -30,7 +30,7 @@ declare type NavbarProps = {
     | React.ReactElement<NavbarChildrenType>;
 };
 export declare function NavbarWrapper(props: NavbarProps): any;
-declare type NavbarContainerProps = TagProps & {
+type NavbarContainerProps = TagProps & {
   toggleOpen: () => void;
   isOpen: boolean;
   children: React.ReactNode;
@@ -39,12 +39,12 @@ export declare function NavbarContainer({
   children,
   ...props
 }: NavbarContainerProps): any;
-declare type NavbarBrandProps = LinkProps;
+type NavbarBrandProps = LinkProps;
 export declare function NavbarBrand({
   className,
   ...props
 }: NavbarBrandProps): any;
-declare type NavbarMenuProps = React.PropsWithChildren<{
+type NavbarMenuProps = React.PropsWithChildren<{
   tag?: React.ElementType;
   className?: string;
   isOpen?: boolean;
@@ -54,12 +54,12 @@ export declare function NavbarMenu({
   className,
   ...props
 }: NavbarMenuProps): any;
-declare type NavbarLinkProps = LinkProps;
+type NavbarLinkProps = LinkProps;
 export declare function NavbarLink({
   className,
   ...props
 }: NavbarLinkProps): any;
-declare type NavbarButtonProps = React.PropsWithChildren<{
+type NavbarButtonProps = React.PropsWithChildren<{
   tag?: React.ElementType;
   className?: string;
 }>;

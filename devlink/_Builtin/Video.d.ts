@@ -1,5 +1,5 @@
 import { Embed } from "../types";
-declare type VideoProps = {
+type VideoProps = {
   className?: string;
   options: Embed.Video;
 };

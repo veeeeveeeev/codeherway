@@ -1,4 +1,4 @@
-declare type YouTubeVideoProps = {
+type YouTubeVideoProps = {
   className?: string;
   title: string;
   videoId: string;
