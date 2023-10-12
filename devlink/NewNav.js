@@ -69,10 +69,43 @@ export function NewNav({
             </_Builtin.Heading>
           </_Builtin.NavbarBrand>
         </_Builtin.Block>
-        <_Builtin.Block className={_utils.cx(_styles, "nav-big")} tag="div">
+        <_Builtin.Block className={_utils.cx(_styles, "nav-small")} tag="div">
+          <_Builtin.Link
+            className={_utils.cx(_styles, "logo-header-2")}
+            button={false}
+            options={blog}
+          >
+            {"BLOG"}
+          </_Builtin.Link>
+          <_Builtin.Link
+            className={_utils.cx(_styles, "logo-header-2")}
+            button={false}
+            options={porfolio}
+          >
+            {"PORTFOLIO"}
+          </_Builtin.Link>
+          <_Builtin.Link
+            className={_utils.cx(_styles, "logo-header-2")}
+            button={false}
+            options={about}
+          >
+            {"ABOUT"}
+          </_Builtin.Link>
+          <_Builtin.Link
+            className={_utils.cx(_styles, "logo-header-2")}
+            button={false}
+            options={contact}
+          >
+            {"CONTACT"}
+          </_Builtin.Link>
+        </_Builtin.Block>
+        <_Builtin.Block
+          className={_utils.cx(_styles, "nav", "nav-big")}
+          tag="div"
+        >
           <_Builtin.NavbarMenu
             className={_utils.cx(_styles, "nav-menu-2")}
-            tag="nav"
+            tag="div"
             role="navigation"
           >
             <_Builtin.Block
@@ -121,58 +154,28 @@ export function NewNav({
               </_Builtin.Link>
             </_Builtin.Block>
           </_Builtin.NavbarMenu>
-        </_Builtin.Block>{" "}
-        <_Builtin.NavbarButton
-          className={_utils.cx(_styles, "menu-button-3")}
-          tag="div"
-        >
-          <_Builtin.Block
-            className={_utils.cx(_styles, "menu-icon-3")}
+          <_Builtin.NavbarButton
+            className={_utils.cx(_styles, "menu-button-3")}
             tag="div"
           >
             <_Builtin.Block
-              className={_utils.cx(_styles, "menu-icon-line")}
+              className={_utils.cx(_styles, "menu-icon-3")}
               tag="div"
-            />
-            <_Builtin.Block
-              className={_utils.cx(_styles, "menu-icon-line")}
-              tag="div"
-            />
-            <_Builtin.Block
-              className={_utils.cx(_styles, "menu-icon-line")}
-              tag="div"
-            />
-          </_Builtin.Block>
-        </_Builtin.NavbarButton>
-        <_Builtin.Block className={_utils.cx(_styles, "nav-small")} tag="div">
-          <_Builtin.Link
-            className={_utils.cx(_styles, "logo-header-2")}
-            button={false}
-            options={blog}
-          >
-            {"BLOG"}
-          </_Builtin.Link>
-          <_Builtin.Link
-            className={_utils.cx(_styles, "logo-header-2")}
-            button={false}
-            options={porfolio}
-          >
-            {"PORTFOLIO"}
-          </_Builtin.Link>
-          <_Builtin.Link
-            className={_utils.cx(_styles, "logo-header-2")}
-            button={false}
-            options={about}
-          >
-            {"ABOUT"}
-          </_Builtin.Link>
-          <_Builtin.Link
-            className={_utils.cx(_styles, "logo-header-2")}
-            button={false}
-            options={contact}
-          >
-            {"CONTACT"}
-          </_Builtin.Link>
+            >
+              <_Builtin.Block
+                className={_utils.cx(_styles, "menu-icon-line")}
+                tag="div"
+              />
+              <_Builtin.Block
+                className={_utils.cx(_styles, "menu-icon-line")}
+                tag="div"
+              />
+              <_Builtin.Block
+                className={_utils.cx(_styles, "menu-icon-line")}
+                tag="div"
+              />
+            </_Builtin.Block>
+          </_Builtin.NavbarButton>
         </_Builtin.Block>
       </_Builtin.Block>
     </_Component>

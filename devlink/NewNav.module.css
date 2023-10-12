@@ -31,13 +31,23 @@
 .nav {
   position: relative;
   z-index: 150;
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
 }
 
 @media screen and (max-width: 767px) {
   .nav {
+    display: block;
+  }
+}
+
+.nav-big {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .nav-big {
     display: block;
   }
 }
@@ -61,13 +71,9 @@
   font-weight: 300;
 }
 
-.nav-big {
-  display: none;
-}
-
 @media screen and (max-width: 767px) {
-  .nav-big {
-    display: block;
+  .nav-small {
+    display: none;
   }
 }
 
@@ -160,10 +166,4 @@
   width: 23px;
   height: 1px;
   background-color: hsla(37.49999999999997, 23.53%, 86.67%, 1.00);
-}
-
-@media screen and (max-width: 767px) {
-  .nav-small {
-    display: none;
-  }
 }
