@@ -24,6 +24,19 @@ const postSchema = new Schema(
       type: Boolean,
       required: true,
     },
+    viewCount: {
+      type: Number,
+      required: true,
+      default: 0,
+    },
+    viTitle: {
+      type: String,
+      required: true,
+    },
+    viBody: {
+      type: String,
+      required: true,
+    },
   },
   { timestamps: true }
 );

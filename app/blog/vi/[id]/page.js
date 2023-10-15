@@ -1,9 +1,9 @@
 import { PostBody, PostTop } from "@/devlink";
 import React from "react";
-import BlogBody from "@/components/BlogBody";
+import ViBlogBody from "@/components/ViBlogBody";
 import getPost from "@/lib/getPost";
 import { notFound } from "next/navigation";
-import Link from "next/link";
+import getTranslation from "@/lib/getTranslation";
 export async function generateMetadata({ params }) {
   const post = await getPost(params.id);
   if (!post.title) {
@@ -19,11 +19,13 @@ export async function generateMetadata({ params }) {
 const Post = async ({ params }) => {
   const data = await getPost(params.id);
   if (!data.title) notFound();
+
+  //   const heading = await getTranslation(data.title);
+
   return (
     <div>
       <PostTop heading={data.title} />
-      <PostBody image={data.image} richText={<BlogBody data={data} />} />
-      <Link href={`/blog/vi/${params.id}`}>Read in Vietnamese</Link>
+      <PostBody image={data.image} richText={<ViBlogBody data={data} />} />
     </div>
   );
 };

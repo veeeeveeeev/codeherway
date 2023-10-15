@@ -6,6 +6,7 @@ import {
   SectionCallToAction,
 } from "@/devlink";
 import getAllPosts from "@/lib/getAllPosts";
+import getTranslation from "@/lib/getTranslation";
 import React from "react";
 
 const Blog = async ({ searchParams }) => {
