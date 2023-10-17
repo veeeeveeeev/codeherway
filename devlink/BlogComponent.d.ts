@@ -7,4 +7,5 @@ declare function BlogComponent(props: {
   headingLink?: Types.Basic.Link;
   headingBlog?: React.ReactNode;
   catBlog?: React.ReactNode;
+  view?: React.ReactNode;
 }): React.JSX.Element;

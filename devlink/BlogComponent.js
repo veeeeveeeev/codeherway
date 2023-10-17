@@ -18,6 +18,7 @@ export function BlogComponent({
 
   headingBlog = "Heading",
   catBlog = "This is some text inside of a div block.",
+  view = "This is some text inside of a div block.",
 }) {
   _interactions.useInteractions(_interactionsData, _styles);
 
@@ -48,6 +49,7 @@ export function BlogComponent({
             height="auto"
             loading="lazy"
             width="auto"
+            alt=""
             src={imageBlog}
           />
         </_Builtin.Block>
@@ -75,6 +77,12 @@ export function BlogComponent({
           tag="div"
         >
           {catBlog}
+        </_Builtin.Block>
+        <_Builtin.Block
+          className={_utils.cx(_styles, "text-block-3")}
+          tag="div"
+        >
+          {view}
         </_Builtin.Block>
       </_Builtin.Link>
     </_Component>

@@ -31,3 +31,17 @@ export const POST = async (request) => {
     return new NextResponse("Database Error", { status: 500 });
   }
 };
+
+export const PUT = async (request) => {
+  const id = await request.json();
+
+  try {
+    await connect();
+
+    const post = await Post.findByIdAndUpdate(id, { $inc: { viewCount: 1 } });
+
+    return new NextResponse(JSON.stringify(post), { status: 200 });
+  } catch (err) {
+    return new NextResponse("Database Error", { status: 500 });
+  }
+};
