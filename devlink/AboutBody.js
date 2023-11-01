@@ -15,11 +15,11 @@ export function AboutBody({
   // image1 = "",
   // imageBlock,
 
-  link = {
-    href: "#",
-  },
+  // link = {
+  //   href: "/assets/resume.pdf",
+  // },
 
-  textLink = "Text Link",
+  // textLink = "Text Link",
 }) {
   _interactions.useInteractions(_interactionsData, _styles);
 
@@ -138,7 +138,7 @@ export function AboutBody({
           data-w-id="8e9d635d-440f-64a1-137a-629543453d93"
           tag="div"
         >
-          <_Builtin.Heading
+          {/* <_Builtin.Heading
             className={_utils.cx(_styles, "subheading")}
             id={_utils.cx(
               _styles,
@@ -169,7 +169,7 @@ export function AboutBody({
             >
               {textLink}
             </_Builtin.Link>
-          </_Builtin.Block>
+          </_Builtin.Block> */}
         </_Builtin.Grid>
       </_Builtin.Block>
     </_Component>
