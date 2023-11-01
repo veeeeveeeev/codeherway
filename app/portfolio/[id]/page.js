@@ -1,6 +1,5 @@
 import { ProjectBody, ProjectImage, ProjectTop } from "@/devlink";
-import getProject from "@/lib/getProject";
-import Image from "next/image";
+import getProject from "@/public/getProject";
 import React from "react";
 import { notFound } from "next/navigation";
 export async function generateMetadata({ params }) {
